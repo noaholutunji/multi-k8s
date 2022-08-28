@@ -1,9 +1,9 @@
 apiVersion: certmanager.k8s.io/v1alpha1
 kind: Certificate
 metadata:
-  name: multi-k8s-ga-tls
+  name: multi-k8s-tls
 spec:
-  secretName: multi-k8s-ga
+  secretName: multi-k8s
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
