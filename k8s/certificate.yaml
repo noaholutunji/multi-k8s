@@ -7,14 +7,14 @@ spec:
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
-  commonName: multi-k8s.ga
+  commonName: multi-k8s.ml
   dnsNames:
-    - multi-k8s.ga
-    - www.multi-k8s.ga
+    - multi-k8s.ml
+    - www.multi-k8s.ml
   acme:
     config:
       - http01:
           ingressClass: nginx
         domains:
-          - multi-k8s.ga
-          - www.multi-k8s.ga
+          - multi-k8s.ml
+          - www.multi-k8s.ml

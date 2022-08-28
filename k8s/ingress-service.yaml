@@ -10,12 +10,12 @@ metadata:
 spec:
   tls:
     - hosts:
-        - multi-k8s.ga
-        - www.multi-k8s.ga
-      secretName: multi-k8s-ga
+        - multi-k8s.ml
+        - www.multi-k8s.ml
+      secretName: multi-k8s
   rules:
-    - host: multi-k8s.ga
-    - http:
+    - host: multi-k8s.ml
+      http:
         paths:
           - path: /?(.*)
             backend:
@@ -25,8 +25,8 @@ spec:
             backend:
               serviceName: server-cluster-ip-service
               servicePort: 5000
-    - host: www.multi-k8s.ga
-    - http:
+    - host: www.multi-k8s.ml
+      http:
         paths:
           - path: /?(.*)
             backend:
